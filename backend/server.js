@@ -30,13 +30,13 @@ const JWT_SECRET = process.env.JWT_SECRET || 'your_jwt_secret_key_here';
 // ============================
 // DATABASE CONNECTION
 // ============================
-mongoose.connect(process.env.MONGODB_URI || 'mongodb://localhost:27017/autoverse-chat', {
+mongoose.connect('mongodb+srv://azharali1662003:vwbjNdb4y9EUbfEB@cluster0.0om7rba.mongodb.net/chatapp?retryWrites=true&w=majority', {
     useNewUrlParser: true,
     useUnifiedTopology: true,
 }).then(() => {
-    console.log('MongoDB connected successfully');
+    console.log('MongoDB Atlas connected successfully');
 }).catch((err) => {
-    console.error('MongoDB connection error:', err);
+    console.error('MongoDB Atlas connection error:', err);
 });
 
 // ============================
