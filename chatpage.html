@@ -1649,7 +1649,7 @@
         // AUTH + CHAT (DATABASE-DRIVEN)
         // ============================
 
-        const API_BASE = 'http://localhost:5002/api';
+        const API_BASE = 'https://chat-application-production-7a3a.up.railway.app/api';
         let authToken = localStorage.getItem('chat_token') || '';
         let currentUser = JSON.parse(localStorage.getItem('chat_user') || 'null');
         let activeConversationUser = null;
@@ -1863,7 +1863,7 @@
             // Initialize Socket.IO only once
             if (!window._socketInitialized) {
                 window._socketInitialized = true;
-                window.socket = io('http://localhost:5002', {
+                window.socket = io('https://chat-application-production-7a3a.up.railway.app', {
                     reconnection: true,
                     reconnectionAttempts: Infinity,
                     reconnectionDelay: 1000
