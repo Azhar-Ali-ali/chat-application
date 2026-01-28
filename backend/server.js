@@ -839,6 +839,9 @@ app.use((err, req, res, next) => {
 
 // ============================
 // SOCKET.IO REAL-TIME CHAT
+
+// ============================
+// ============================
 // ============================
 
 io.on('connection', (socket) => {
@@ -860,6 +863,3 @@ const PORT = 5002;
 server.listen(PORT, () => {
     console.log(`Server is running on port ${PORT}`);
 });
-
-
-
